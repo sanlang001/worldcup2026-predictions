@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate:report": "node scripts/generate-report.mjs"
+    "generate:report": "node scripts/generate-report.mjs",
+    "sync:upstream": "node scripts/sync-upstream.mjs"
   }
 }

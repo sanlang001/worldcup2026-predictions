@@ -98,6 +98,41 @@ scripts/examples/match-config.example.json
 2. 一套预测规则或模型
 3. 自动把抓到的信息转成上面这份 JSON 配置
 
+## 同步原站更新
+
+如果你希望你的站点自动跟随原站 `joearkon/worldcup2026-predictions` 的每日更新，现在仓库里已经补了同步脚本和定时任务：
+
+```text
+scripts/sync-upstream.mjs
+.github/workflows/sync-upstream.yml
+```
+
+本地手动试跑：
+
+```bash
+node scripts/sync-upstream.mjs --dry-run
+```
+
+本地实际同步：
+
+```bash
+node scripts/sync-upstream.mjs
+```
+
+这套同步会做的事：
+
+1. 拉取上游仓库最新 `data.js`
+2. 拉取上游仓库 `reports/` 全部 HTML
+3. 自动替换成你的站名和作者
+4. 自动去掉原备案号
+5. GitHub Actions 每 6 小时自动同步一次，并自动提交回你的仓库
+
+注意：
+
+- 这是“同步原站内容”，不是你自己的独立预测模型
+- 目前同步目标固定为 `joearkon/worldcup2026-predictions`
+- 如果你自己改了同名报告页，下次同步会被上游覆盖
+
 ## 部署
 
 推荐用 GitHub Pages 自动发布：
