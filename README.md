@@ -125,7 +125,7 @@ node scripts/sync-upstream.mjs
 2. 拉取上游仓库 `reports/` 全部 HTML
 3. 自动替换成你的站名和作者
 4. 自动去掉原备案号
-5. GitHub Actions 每 6 小时自动同步一次，并自动提交回你的仓库
+5. GitHub Actions 每 3 小时自动同步一次，并自动提交回你的仓库
 
 注意：
 
