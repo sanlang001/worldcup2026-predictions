@@ -1,0 +1,8 @@
+{
+  "name": "worldcup2026-predictions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:report": "node scripts/generate-report.mjs"
+  }
+}

@@ -46,6 +46,58 @@
 
 直接双击 `index.html` 即可（纯静态，无需服务器）。报告页中文文件名通过 `encodeURI` 处理，`file://` 下链接也可点。
 
+## 自动生成报告
+
+原始站点本身**没有接自动预测 API**，而是：
+
+1. 手工整理一场比赛的五维判断与盘口信息
+2. 生成一份独立 `reports/*.html` 报告
+3. 把这场比赛追加到 `data.js` 的 `matches` 数组
+
+现在仓库里已经补了一套本地生成工具，可以把这个流程自动化成“配置驱动”：
+
+```bash
+npm run generate:report -- scripts/examples/match-config.example.json --dry-run
+```
+
+如果你的 PowerShell 拦截了 `npm.ps1`，可以直接这样运行：
+
+```bash
+node scripts/generate-report.mjs scripts/examples/match-config.example.json --dry-run
+```
+
+真正写入报告文件：
+
+```bash
+npm run generate:report -- scripts/examples/match-config.example.json
+```
+
+生成报告并同步写入首页数据：
+
+```bash
+npm run generate:report -- scripts/examples/match-config.example.json --write-data
+```
+
+相关文件：
+
+```text
+package.json
+scripts/generate-report.mjs
+scripts/examples/match-config.example.json
+```
+
+这套工具目前能做到：
+
+- 根据一份 JSON 配置自动生成和原站风格一致的报告页
+- 可选地自动把该比赛写入 `data.js -> matches`
+- 保持首页时间轴、战绩、积分榜继续按原逻辑自动渲染
+
+这套工具**还不能自动上网抓数据、自动做预测判断**。如果你要真正做到“未预测比赛自动生成预测直到全部完成”，下一步需要再接：
+
+1. 赛程/赔率/伤病数据源
+2. 一套预测规则或模型
+3. 自动把抓到的信息转成上面这份 JSON 配置
+
 ## 部署
 
 推荐用 GitHub Pages 自动发布：
