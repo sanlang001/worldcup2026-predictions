@@ -2,7 +2,7 @@
 
 > 每场赛前用「五维框架 + 盘口」做综合预测，赛后复盘命中情况，持续累积可复用的判断经验。
 >
-> 🌐 在线站点：待绑定你的域名 · powered by **1000光年**
+> 🌐 在线站点：**[sanlang001.github.io/worldcup2026-predictions](https://sanlang001.github.io/worldcup2026-predictions/)** · powered by **1000光年**
 
 ---
 
