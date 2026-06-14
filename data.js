@@ -48,6 +48,32 @@ const WORLDCUP_DATA = {
   /* ---------- 赛事预测记录（新比赛往最前面加） ---------- */
   matches: [
     {
+      date: "2026-06-15 10:00（北京时间）",
+      sortKey: "2026-06-15 10:00",
+      group: "F组",
+      home: { flag: "🇸🇪", name: "瑞典" },
+      away: { flag: "🇹🇳", name: "突尼斯" },
+      mainPred: "1-0 瑞典",
+      altPred: "1-1",
+      actual: null,
+      status: "pending",
+      report: "世界杯小组赛预测_瑞典vs突尼斯.html",
+      note: "墨西哥蒙特雷 · 双枪vs突尼斯铁桶(9胜1平)+瑞典世界杯6/8场小球→主1-0。承澳土(铁桶掀翻大热)教训,1-1提为并列次选,突尼斯不败是最live的尾部;比分不变只调权重"
+    },
+    {
+      date: "2026-06-15 07:00（北京时间）",
+      sortKey: "2026-06-15 07:00",
+      group: "E组",
+      home: { flag: "🇨🇮", name: "科特迪瓦" },
+      away: { flag: "🇪🇨", name: "厄瓜多尔" },
+      mainPred: "1-1",
+      altPred: "0-1 厄瓜多尔",
+      actual: null,
+      status: "pending",
+      report: "世界杯小组赛预测_科特迪瓦vs厄瓜多尔.html",
+      note: "费城 · 非洲冠军(阿勒/佩佩/阿丁格拉)vs防守极硬+平局成性的厄瓜多尔(19场平11)。双防强+浅盘+低分→主锚1-1,次选0-1厄小胜"
+    },
+    {
       date: "2026-06-15 04:00（北京时间）",
       sortKey: "2026-06-15 04:00",
       group: "F组",
@@ -67,11 +93,11 @@ const WORLDCUP_DATA = {
       home: { flag: "🇩🇪", name: "德国" },
       away: { flag: "🇨🇼", name: "库拉索" },
       mainPred: "3-0 德国",
-      altPred: "2-0 德国",
+      altPred: "4-0 德国",
       actual: null,
       status: "pending",
       report: "世界杯小组赛预测_德国vs库拉索.html",
-      note: "休斯顿NRG · 身价36倍鸿沟,德国必胜。亚盘sharp让3球(-3)深盘+库拉索近5场失11→主预测上调3-0(亚盘硬信号优先于收口先验,同0613瑞士让2教训),次选2-0"
+      note: "休斯顿NRG · 身价36倍鸿沟,德国必胜。06-15盘口加深:亚盘-3.5+大小球4.5,市场重心净胜3-4。次选由2-0上调4-0,夹住3-0/4-0(库拉索是会漏的鱼腩非铁桶,便秘教训不适用)"
     },
     {
       date: "2026-06-14 12:00（北京时间）",
@@ -81,10 +107,10 @@ const WORLDCUP_DATA = {
       away: { flag: "🇹🇷", name: "土耳其" },
       mainPred: "1-2 土耳其",
       altPred: "1-1",
-      actual: null,
-      status: "pending",
-      report: "世界杯小组赛预测_澳大利亚vs土耳其.html",
-      note: "温哥华BC Place · 土耳其黄金一代五连胜 vs 澳式铁桶，冷门系数最高的一场"
+      actual: "2-0 澳大利亚胜",
+      status: "miss",
+      report: "世界杯复盘_澳大利亚vs土耳其.html",
+      note: "方向完全押反！土耳其全场30脚射门0进球(控得住≠攻得破第3例)，澳洲三中卫铁桶+稳守突击：伊兰昆达26'、梅特卡夫74'远射。我方五维⑤软性本就标澳占优，却被'土天赋+盘口firm'盖过=教训。点击看复盘"
     },
     {
       date: "2026-06-14 09:00（北京时间）",
