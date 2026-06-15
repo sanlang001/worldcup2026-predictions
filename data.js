@@ -48,6 +48,30 @@ const WORLDCUP_DATA = {
   /* ---------- 赛事预测记录（新比赛往最前面加） ---------- */
   matches: [
     {
+      date: "2026-06-16 03:00（北京时间）",
+      sortKey: "2026-06-16 03:00",
+      group: "G组",
+      home: { flag: "🇧🇪", name: "比利时" },
+      away: { flag: "🇪🇬", name: "埃及" },
+      mainPred: "1-0 比利时",
+      altPred: "1-1",
+      actual: null,
+      status: "pending",
+      note: "西雅图 · 比利时-150浅盘(非深盘),市场最可能比分比利时1-0。比利时黄金一代老化+卢卡库伤缺无正牌9号(德凯特拉雷顶),埃及有萨拉赫+马尔穆什会进球→低分小胜,埃及不败是live次选。落地'天赋队别押大'(澳土/巴西教训)+firm≠确认:主1-0/次1-1。临场若移动盘偏埃及→按新规把1-1扶正为主。"
+    },
+    {
+      date: "2026-06-16 00:00（北京时间）",
+      sortKey: "2026-06-16 00:00",
+      group: "H组",
+      home: { flag: "🇪🇸", name: "西班牙" },
+      away: { flag: "🇨🇻", name: "佛得角" },
+      mainPred: "3-0 西班牙",
+      altPred: "2-0 西班牙",
+      actual: null,
+      status: "pending",
+      note: "亚特兰大 · 西班牙1/10碾压(让-2.5/-3深盘),佛得角首届新军摆铁桶。盘口sharp深盘→按新规不收口、敢押2球净胜;但西班牙传控'控得住≠攻得破'风险在→主3-0(下半场拉开)/次2-0,上半场破不开密防则1-0为尾部。亚马尔/N.威廉斯替补待命=破僵局变量。"
+    },
+    {
       date: "2026-06-15 10:00（北京时间）",
       sortKey: "2026-06-15 10:00",
       group: "F组",
@@ -55,8 +79,8 @@ const WORLDCUP_DATA = {
       away: { flag: "🇹🇳", name: "突尼斯" },
       mainPred: "1-0 瑞典",
       altPred: "1-1",
-      actual: null,
-      status: "pending",
+      actual: "5-1 瑞典胜",
+      status: "direction",
       report: "世界杯小组赛预测_瑞典vs突尼斯.html",
       note: "墨西哥蒙特雷 · 双枪vs突尼斯铁桶(9胜1平)+瑞典世界杯6/8场小球→主1-0。承澳土(铁桶掀翻大热)教训,1-1提为并列次选,突尼斯不败是最live的尾部;比分不变只调权重"
     },
@@ -68,8 +92,8 @@ const WORLDCUP_DATA = {
       away: { flag: "🇪🇨", name: "厄瓜多尔" },
       mainPred: "1-1",
       altPred: "0-1 厄瓜多尔",
-      actual: null,
-      status: "pending",
+      actual: "1-0 科特迪瓦胜",
+      status: "miss",
       report: "世界杯小组赛预测_科特迪瓦vs厄瓜多尔.html",
       note: "费城 · 非洲冠军(阿勒/佩佩/阿丁格拉)vs防守极硬+平局成性的厄瓜多尔(19场平11)。双防强+浅盘+低分→主锚1-1,次选0-1厄小胜"
     },
@@ -81,8 +105,8 @@ const WORLDCUP_DATA = {
       away: { flag: "🇯🇵", name: "日本" },
       mainPred: "2-1 荷兰",
       altPred: "1-1",
-      actual: null,
-      status: "pending",
+      actual: "2-2 平",
+      status: "direction",
       report: "世界杯小组赛预测_荷兰vs日本.html",
       note: "阿灵顿AT&T · 浅盘(荷兰+100)+亚盘仅让-0.5且sharp偏日本不败+日本三核心(三笘/南野/町田)伤缺。收口纪律→主2-1不押3-1;亚盘偏日本→次选1-1权重抬高。移动盘往日本走则下修1-1"
     },
@@ -94,8 +118,8 @@ const WORLDCUP_DATA = {
       away: { flag: "🇨🇼", name: "库拉索" },
       mainPred: "3-0 德国",
       altPred: "4-0 德国",
-      actual: null,
-      status: "pending",
+      actual: "7-1 德国胜",
+      status: "direction",
       report: "世界杯小组赛预测_德国vs库拉索.html",
       note: "休斯顿NRG · 身价36倍鸿沟,德国必胜。06-15盘口加深:亚盘-3.5+大小球4.5,市场重心净胜3-4。次选由2-0上调4-0,夹住3-0/4-0(库拉索是会漏的鱼腩非铁桶,便秘教训不适用)"
     },
